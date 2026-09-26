@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Srajan Naik — Computer Science &amp; Design student</title>
+    <meta name="description"
+        content="Portfolio of Srajan Naik, second-year Computer Science and Design student at Canara Engineering College, Mangalore. Web development, AI and electronics projects." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <a class="skip" href="#home">Skip to content</a>
+
+    <!-- ============ FLOATING NAVBAR ============ -->
+    <header class="navwrap">
+        <nav class="navbar" aria-label="Main">
+            <a class="brand" href="#home">SN</a>
+
+            <ul class="navlinks" id="navlinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navlinks">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                <span class="sr">Menu</span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ============ HOME / HERO ============ -->
+        <section id="home" class="hero">
+            <div class="hero-blob" aria-hidden="true">
+                <span class="blob blob-a"></span>
+                <span class="blob blob-b"></span>
+            </div>
+
+            <div class="hero-grid">
+                <div class="hero-text">
+                    <p class="hello">Hello, I'm</p>
+                    <h1 class="hero-name">Srajan Naika</h1>
+                    <p class="hero-role">CSD student · web development · AI · electronics</p>
+                    <p class="hero-sub">
+                        Second-year Computer Science and Design Engineering student at Canara
+                        Engineering College, Mangalore. I build things that run — on a browser,
+                        and on a breadboard.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="cta" href="#projects">See my projects</a>
+                        <a class="cta ghost" href="#contact">Get in touch</a>
+                    </div>
+                </div>
+
+                <img class="hero-photo" src="image.jpeg" alt="Portrait of Srajan Naika" />
+            </div>
+        </section>
+
+        <!-- ============ ABOUT ============ -->
+        <section id="about">
+            <p class="eyebrow">01 · About Me</p>
+            <h2>What I'm about</h2>
+            <div class="about-grid">
+                <p class="lede">
+                    Programming, web development, artificial intelligence and electronics
+                    are what hold my attention. I learn best by building — picking up a new
+                    technology and pushing it into a working project is how I sharpen both
+                    my technical skills and the way I break a problem down.
+                </p>
+                <dl class="facts">
+                    <div>
+                        <dt>College</dt>
+                        <dd>Canara Engineering College, Mangalore</dd>
+                    </div>
+                    <div>
+                        <dt>Branch</dt>
+                        <dd>Computer Science &amp; Design, 2nd year</dd>
+                    </div>
+                    <div>
+                        <dt>Home</dt>
+                        <dd>Nalkuru Village, Udupi</dd>
+                    </div>
+                    <div>
+                        <dt>Looking for</dt>
+                        <dd>Internships and team projects</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <!-- ============ SKILLS ============ -->
+        <section id="skills">
+            <p class="eyebrow">02 · Skills</p>
+            <h2>What I work with</h2>
+            <div class="skill-grid">
+                <article class="skill-card">
+                    <h3>Programming</h3>
+                    <ul>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>C</li>
+                    </ul>
+                </article>
+                <article class="skill-card">
+                    <h3>Web</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>Web development</li>
+                    </ul>
+                </article>
+                <article class="skill-card">
+                    <h3>Also working on</h3>
+                    <ul>
+                        <li>Artificial intelligence</li>
+                        <li>ESP32 and electronics</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- ============ PROJECTS ============ -->
+        <section id="projects">
+            <p class="eyebrow">03 · Projects</p>
+            <h2>Things I've built</h2>
+
+            <ol class="projects">
+                <li class="project">
+                    <h3>Automatic plant watering system</h3>
+                    <p>An ESP32 board reads a soil moisture sensor and switches a water pump
+                        on when the soil dries past a set threshold, so a plant keeps watering
+                        itself while nobody is home.</p>
+                    <p class="stack">ESP32 · Soil moisture sensor · Relay and pump · Embedded C</p>
+                </li>
+
+                <li class="project">
+                    <h3>Auto rickshaw finder</h3>
+                    <p>A web-based project that helps users find nearby auto rickshaws
+                        easily, making local transportation more convenient by locating
+                        available rickshaws and showing useful information about them.</p>
+                    <p class="stack">HTML · Web development</p>
+                </li>
+
+                <!-- ADD MORE PROJECTS: copy this block, fill it in, delete the comment markers
+      <li class="project">
+        <h3>Project name</h3>
+        <p>One or two sentences on what it does and who it is for.</p>
+        <p class="stack">Tools · you · used</p>
+        <a class="go" href="https://github.com/yourusername/repo">View code</a>
+      </li>
+      -->
+            </ol>
+        </section>
+
+        <!-- ============ CONTACT ============ -->
+        <section id="contact">
+            <p class="eyebrow">04 · Contact</p>
+            <h2>Get in touch</h2>
+            <p class="lede small">Write to me about an internship, a project idea, or anything built with code or
+                circuits.</p>
+
+            <div class="contact-grid">
+                <dl class="facts">
+                    <div>
+                        <dt>Phone</dt>
+                        <dd><a href="tel:+918317413306">+91 83174 13306</a></dd>
+                    </div>
+                    <div>
+                        <dt>Email</dt>
+                        <dd><button class="mail" id="copyMail"
+                                data-mail="srajannaik96@gmail.com">srajannaik96@gmail.com</button></dd>
+                    </div>
+                    <div>
+                        <dt>Address</dt>
+                        <dd>Kajke Kodjeddu, Nalkuru Village,<br />Udupi, Karnataka 576234</dd>
+                    </div>
+                    <div>
+                        <dt>Elsewhere</dt>
+                        <dd><a href="https://github.com/Srajan-Naik">GitHub</a> · <a
+                                href="https://www.linkedin.com/in/srajan-naika-69b768383/">LinkedIn</a></dd>
+                    </div>
+                </dl>
+
+                <form class="form" id="contactForm" novalidate>
+                    <label>Your name
+                        <input type="text" name="name" required />
+                        <span class="err" data-for="name"></span>
+                    </label>
+                    <label>Email
+                        <input type="email" name="email" required />
+                        <span class="err" data-for="email"></span>
+                    </label>
+                    <label>Message
+                        <textarea name="message" rows="5" required></textarea>
+                        <span class="err" data-for="message"></span>
+                    </label>
+                    <button type="submit" class="send">Send message</button>
+                    <p class="status" id="formStatus" role="status"></p>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <p>Srajan Naik · Built by hand with HTML, CSS and JavaScript · 2026</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
