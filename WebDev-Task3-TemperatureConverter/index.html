@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="An interactive temperature converter for Celsius, Fahrenheit, and Kelvin with input validation.">
+    <title>Temperature Converter | OIBSIP Task 3</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main class="page">
+        <section class="converter-card">
+            <div class="brand">
+                <span class="thermometer">🌡️</span>
+                <span>THERMO<span class="brand-accent">CONVERT</span></span>
+            </div>
+
+            <p class="eyebrow">OIBSIP · WEB DEVELOPMENT · TASK 3</p>
+            <h1>Temperature <span>Converter</span></h1>
+            <p class="subtitle">
+                Convert temperatures between Celsius, Fahrenheit, and Kelvin.
+                Simple, accurate, and instant.
+            </p>
+
+            <form id="converterForm" novalidate>
+                <div class="field">
+                    <label for="temperature">Enter temperature</label>
+                    <input type="number" id="temperature" name="temperature" placeholder="e.g. 25" step="any" required
+                        aria-describedby="inputHelp errorMessage">
+                    <small id="inputHelp">Enter a valid temperature value.</small>
+                </div>
+
+                <div class="field">
+                    <label for="inputUnit">Convert from</label>
+                    <select id="inputUnit" name="inputUnit">
+                        <option value="C">Celsius (°C)</option>
+                        <option value="F">Fahrenheit (°F)</option>
+                        <option value="K">Kelvin (K)</option>
+                    </select>
+                </div>
+
+                <p id="errorMessage" class="error-message" role="alert" aria-live="polite"></p>
+
+                <button type="submit" id="convertButton">
+                    Convert Temperature <span aria-hidden="true">→</span>
+                </button>
+            </form>
+
+            <section class="results" aria-labelledby="resultsTitle" aria-live="polite">
+                <div class="results-heading">
+                    <h2 id="resultsTitle">Conversion Results</h2>
+                    <span class="live-dot"></span>
+                </div>
+                <p class="results-description">Your equivalent temperatures appear below.</p>
+
+                <article class="result-item">
+                    <div class="unit-icon celsius-icon">°C</div>
+                    <div class="result-info">
+                        <span class="unit-name">Celsius</span>
+                        <span class="unit-symbol">Degrees Celsius</span>
+                    </div>
+                    <output id="celsiusResult" class="result-value">—</output>
+                </article>
+
+                <article class="result-item">
+                    <div class="unit-icon fahrenheit-icon">°F</div>
+                    <div class="result-info">
+                        <span class="unit-name">Fahrenheit</span>
+                        <span class="unit-symbol">Degrees Fahrenheit</span>
+                    </div>
+                    <output id="fahrenheitResult" class="result-value">—</output>
+                </article>
+
+                <article class="result-item">
+                    <div class="unit-icon kelvin-icon">K</div>
+                    <div class="result-info">
+                        <span class="unit-name">Kelvin</span>
+                        <span class="unit-symbol">Kelvin scale</span>
+                    </div>
+                    <output id="kelvinResult" class="result-value">—</output>
+                </article>
+            </section>
+
+            <p class="formula-note">
+                <span aria-hidden="true">ⓘ</span>
+                Calculations use standard temperature conversion formulas.
+            </p>
+        </section>
+
+        <footer>
+            <p>Built with HTML, CSS &amp; JavaScript</p>
+            <p>OIBSIP Web Development Internship · Task 3</p>
+        </footer>
+    </main>
+</body>
+
+</html>
